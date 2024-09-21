@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SignIn from "./components/SignIn";
+import { useAuthState } from "react-firebase-hooks";
+import { auth } from "./firebase.js";
 
 function App() {
-  return (
-    <div>
-    </div>
-  );
+  const user = useAuthState(auth);
+  return <div>{user ? <Line /> : <SignIn />}</div>;
 }
 
 export default App;
