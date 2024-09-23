@@ -10,7 +10,7 @@ function SignOut() {
         onClick={() => auth.signOut()}
         style={{ color: "white", fontSize: "15px" }}
       >
-        サインアウト
+        Sign Out
       </Button>
       <h3>{auth.currentUser.displayName}</h3>
       <CallIcon />
