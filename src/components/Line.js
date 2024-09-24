@@ -18,6 +18,17 @@ function Line() {
     <div>
       {console.log(messages)}
       <SignOut />
+      <div className="msgs">
+        {messages.map(({ id, text, photoURL, uid }) => (
+          <div>
+            <div key={id}>
+              <img src={photoURL} />
+              <p>{text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <SendMessage />
     </div>
   );
 }
