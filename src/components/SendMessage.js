@@ -23,14 +23,21 @@ function SendMessage() {
   return (
     <div>
       <form onSubmit={sendMessage}>
-        <div>
+        <div className="sendMsg">
           <Input
+            style={{
+              width: "78%",
+              fontSize: "15px",
+              fontWeight: "550",
+              marginLeft: "5px",
+              marginBottom: "-3px",
+            }}
             placeholder="Enter message"
             type="text"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
-                  />
-                  <SendIcon/>
+          />
+          <SendIcon />
         </div>
       </form>
     </div>
