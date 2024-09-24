@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SignOut from "./SignOut";
 import { db } from "../firebase.js";
 import { ConstructionOutlined } from "@mui/icons-material";
+import SendMessage from "./SendMessage";
 
 function Line() {
   const [messages, setMessages] = useState([]);
